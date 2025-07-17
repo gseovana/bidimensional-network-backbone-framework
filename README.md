@@ -81,12 +81,13 @@ The data folders in the Google Drive are already structured correctly. After dow
 The following publications support or inspired key components of this work. Please cite them if you use this repository or build upon its methodology:
 
 **Backbone Extraction Algorithm**
-- Marcaccioli, R., & Livan, G. (2019). *A Pólya urn approach to information filtering in complex networks*. Nature Communications, 10, 745. https://doi.org/10.1038/s41467-019-08667-3
-Link to download: https://www.mathworks.com/matlabcentral/fileexchange/69501-pf
+- Marcaccioli, R., & Livan, G. (2019). *A Pólya urn approach to information filtering in complex networks*. Nature Communications, 10, 745. https://doi.org/10.1038/s41467-019-08667-3 <br>
+➤ Link to download: https://www.mathworks.com/matlabcentral/fileexchange/69501-pf
 
 **Telegram Dataset**
 - Venâncio, O. R., Ferreira, C. H. G., Almeida, J. M., & da Silva, A. P. C. (2024). *Unraveling User Coordination on Telegram: A Comprehensive Analysis of Political Mobilization during the 2022 Brazilian Presidential Election*. Proceedings of the International AAAI Conference on Web and Social Media, 18(1), 1545–1556. https://doi.org/10.1609/icwsm.v18i1.31408
 
+**Twitter Dataset**
 - Fonseca, L. G. G. da, Ferreira, C. H. G., & Reis, J. C. S. dos. (2024). *The Role of News Source Certification in Shaping Tweet Content: Textual and Dissemination Patterns in Brazil's 2022 Elections*. In: Proceedings of the 20th Brazilian Symposium on Information Systems (SBSI), Juiz de Fora, MG. Sociedade Brasileira de Computação.
 
 ## Contact
