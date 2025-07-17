@@ -72,7 +72,7 @@ To facilitate reproducibility under constrained hardware, we provide precomputed
 
 Because of storage limitations on GitHub, the full datasets and precomputed intermediate files used in this study are hosted externally on Google Drive.
 
-**Download link**: [Google Drive - (https://drive.google.com/drive/folders/EXAMPLE_LINK)]
+**➤ Download link**: Google Drive - https://drive.google.com/drive/folders/1ZkhXcBparNYiJVNT91FM6o53PakmFLzT?usp=sharing
 
 The data folders in the Google Drive are already structured correctly. After downloading, no additional reorganization is needed — the files will work with the provided notebooks as-is.
 
