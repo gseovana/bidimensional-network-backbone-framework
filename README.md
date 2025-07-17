@@ -14,7 +14,7 @@ This repository supports full reproducibility of the study by providing:
 1. Fully documented source code covering:
    - Data preprocessing  
    - Backbone extraction  
-   - Graph-based classification  
+   - Edges classification  
    - Community detection  
    - Topic modeling  
 2. Ready-to-run Jupyter notebooks with step-by-step guidance  
@@ -55,34 +55,36 @@ The experiments presented in this repository involve the processing of large-sca
 
 All results reported in the paper were obtained using the following hardware setup:
 
-- **Operating System**: Ubuntu 22.04 LTS (64-bit)
-- **Processor**: AMD Ryzen 9 7950X (16 cores / 32 threads)
-- **Memory**: 125 GB RAM
-- **Storage**: 1.9 TB SSD
-- **GPU**: NVIDIA RTX 6000 Ada Generation (48 GB VRAM)
-- **Python Version**: 3.8.18
+- **Processor type**: 2x Intel Xeon Gold 6130 CPU @ 2.10 GHz (16 cores per socket)
+- **RAM**: 384 GB DDR-4 Dual Rank 2666 MHz
+- **Storage**: 8x HD 1 TB, SAS 12 Gb/s, 2.5”, 7.200 rpm 2x SSD 480 GB, SATA 6 Gb/s, 2.5”
+- **GPU Accelerator**: 2x NVIDIA Tesla V100 PCIe 16 GB
 
 > Several steps involve loading large graphs entirely into memory or performing costly matrix operations (e.g., during topic modeling). Attempting to run the full pipeline on machines with limited RAM or CPU threads may result in memory errors or long processing times.
 
-Although most post-processing and classification stages can be executed on a standard workstation, we recommend using a machine with at least **64 GB of RAM** to ensure smooth replication of all components in both case studies.
+Although most post-processing and classification stages can be executed on a standard workstation, we recommend using a machine with at least **128 GB of RAM** to ensure smooth replication of all components in both case studies.
 
 To facilitate reproducibility under constrained hardware, we provide precomputed intermediate results (e.g., backbone graphs, community assignments, extracted topics), which can be directly loaded in the Jupyter notebooks.
 
-## Datasets and codes
+## Datasets and Code
 
 > ⚠️ Due to ethical and legal constraints, we do **not** include raw textual data. However, all intermediate outputs needed for replication (e.g., structural features, backbones, community labels, topic distributions) are included, and the entire modeling pipeline can be executed from these.
 
-#### Running the Code
-To reproduce the full pipeline, execute the Jupyter notebooks provided in each case study folder (`/Twitter/` and `/Telegram/`). The notebooks are **numbered sequentially** to indicate the correct execution order.
+Because of storage limitations on GitHub, the full datasets and precomputed intermediate files used in this study are hosted externally on Google Drive.
 
-Each notebook is self-contained and annotated. Paths to required input files are relative and configured within each notebook.
+**Download link**: [Google Drive - (https://drive.google.com/drive/folders/EXAMPLE_LINK)]
+
+The data folders in the Google Drive are already structured correctly. After downloading, no additional reorganization is needed — the files will work with the provided notebooks as-is.
 
 ## References
 
 The following publications support or inspired key components of this work. Please cite them if you use this repository or build upon its methodology:
 
+**Backbone Extraction Algorithm**
 - Marcaccioli, R., & Livan, G. (2019). *A Pólya urn approach to information filtering in complex networks*. Nature Communications, 10, 745. https://doi.org/10.1038/s41467-019-08667-3
+Link to download: https://www.mathworks.com/matlabcentral/fileexchange/69501-pf
 
+**Telegram Dataset**
 - Venâncio, O. R., Ferreira, C. H. G., Almeida, J. M., & da Silva, A. P. C. (2024). *Unraveling User Coordination on Telegram: A Comprehensive Analysis of Political Mobilization during the 2022 Brazilian Presidential Election*. Proceedings of the International AAAI Conference on Web and Social Media, 18(1), 1545–1556. https://doi.org/10.1609/icwsm.v18i1.31408
 
 - Fonseca, L. G. G. da, Ferreira, C. H. G., & Reis, J. C. S. dos. (2024). *The Role of News Source Certification in Shaping Tweet Content: Textual and Dissemination Patterns in Brazil's 2022 Elections*. In: Proceedings of the 20th Brazilian Symposium on Information Systems (SBSI), Juiz de Fora, MG. Sociedade Brasileira de Computação.
