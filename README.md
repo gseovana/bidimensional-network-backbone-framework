@@ -9,46 +9,37 @@ To appear in Journal of Systems Information, 2025.
 
 ## Description
 
-This repository supports full reproducibility of the study by providing:
+This repository enables full reproducibility of our study by providing:
 
-1. Fully documented source code covering:
+1. **Well-documented source code** that implements all major steps of the analysis pipeline:
    - Data preprocessing  
    - Backbone extraction  
-   - Edges classification  
+   - Edge classification  
    - Community detection  
    - Topic modeling  
-2. Ready-to-run Jupyter notebooks with step-by-step guidance  
-3. The backbone structures and interaction networks used in both case studies
+
+2. **Ready-to-run Jupyter notebooks** with step-by-step instructions for each stage of the workflow
+3. **External access to all required data artifacts**, including backbone structures and interaction networks for both case studies, available through a shared Google Drive folder
 
 ## Repository Structure
+This repository contains only the Jupyter notebooks used in our experiments. Due to storage limitations, the datasets and intermediate outputs are hosted externally.
+The notebooks are organized into two main case studies: **Telegram** and **Twitter**
 
-All scripts for executing the experiments are organized in subdirectories of this repository. The entire pipeline is implemented using Jupyter notebooks, which are structured to reflect the main stages of our framework: data preprocessing, backbone extraction, classification, community detection, and topic modeling.
-
-We provide preprocessed versions of the datasets used in the study — including backbone graphs, interaction networks, structural features, and community assignments — organized in dedicated folders for each case study.
-
-📁 The structure is organized into two main case studies:
-
-├── /Telegram/<br>
-│ ├── /communities/<br>
-│ ├── /edgelist/<br>
-│ ├── /figs/<br>
-│ ├── /topic_analysis/<br>
-│ ├── 1 - Network Generator.ipynb <br>
-│ ├── 2 - Edge Classifier and Characterization.ipynb <br>
-│ ├── 3 - Community Detection.ipynb <br>
-│ ├── 4 - Topic Analysis.ipynb <br>
-│<br>
-├── /Twitter/ <br>
-│ ├── /communities/ <br>
-│ ├── /dataset/ <br>
-│ ├── /figs/ <br>
-│ ├── /networks/ <br>
-│ ├── 1 - Network Generator.ipynb<br>
-│ ├── 2 - Edge Classifier and Analysis.ipynb<br>
-│ ├── 3 - Community Detection.ipynb<br>
-│ ├── 4 - Topic Analysis.ipynb<br>
-│ └── topology.ipynb <br>
-
+Each case study has its own subdirectory containing the corresponding notebooks:
+```bash
+├── Telegram/
+│├── 1 - Network Generator.ipynb  
+│├── 2 - Edge Classifier and Characterization.ipynb  
+│├── 3 - Community Detection.ipynb  
+│├── 4 - Topic Analysis.ipynb 
+│
+├──Twitter/
+│├── 1 - Network Generator.ipynb  
+│├── 2 - Edge Classifier and Analysis.ipynb  
+│├── 3 - Community Detection.ipynb  
+│├── 4 - Topic Analysis.ipynb  
+│├── topology.ipynb
+```
 ## System Configuration
 
 The experiments presented in this repository involve the processing of large-scale interaction networks and derived graph structures. Given the size and complexity of the datasets — including multi-million edge graphs — certain stages of the pipeline (e.g., backbone extraction, community detection, topic modeling) require substantial computational resources.
@@ -66,15 +57,40 @@ Although most post-processing and classification stages can be executed on a sta
 
 To facilitate reproducibility under constrained hardware, we provide precomputed intermediate results (e.g., backbone graphs, community assignments, extracted topics), which can be directly loaded in the Jupyter notebooks.
 
-## Datasets and Code
-
+## Datasets and Intermediate Outputs
 > ⚠️ Due to ethical and legal constraints, we do **not** include raw textual data. However, all intermediate outputs needed for replication (e.g., structural features, backbones, community labels, topic distributions) are included, and the entire modeling pipeline can be executed from these.
 
-Because of storage limitations on GitHub, the full datasets and precomputed intermediate files used in this study are hosted externally on Google Drive.
+All required datasets and intermediate outputs — including backbone graphs, interaction networks, structural features, community assignments, and topic distributions — are hosted externally on Google Drive. 
 
-**➤ Download link**: Google Drive - https://drive.google.com/drive/folders/1ZkhXcBparNYiJVNT91FM6o53PakmFLzT?usp=sharing
+➤ Download link: Google Drive - https://drive.google.com/drive/folders/1ZkhXcBparNYiJVNT91FM6o53PakmFLzT?usp=sharing
 
-The data folders in the Google Drive are already structured correctly. After downloading, no additional reorganization is needed — the files will work with the provided notebooks as-is.
+ ### How to use the data
+To run the notebooks properly:
+
+1. Download the contents of the Telegram/ and Twitter/ folders from the Google Drive link above.
+2. Place each folder (Telegram and Twitter) in the same directory as this repository, alongside the corresponding notebook folders.
+3. The folder structure should look like this:
+```bash
+├── /Telegram/
+│ ├── /communities/
+│ ├── /edgelist/
+│ ├── /topic_analysis/
+│ ├── 1 - Network Generator.ipynb 
+│ ├── 2 - Edge Classifier and Characterization.ipynb
+│ ├── 3 - Community Detection.ipynb
+│ ├── 4 - Topic Analysis.ipynb
+│
+├── /Twitter/ 
+│ ├── /communities/
+│ ├── /dataset/ 
+│ ├── /networks/ 
+│ ├── 1 - Network Generator.ipynb
+│ ├── 2 - Edge Classifier and Analysis.ipynb
+│ ├── 3 - Community Detection.ipynb
+│ ├── 4 - Topic Analysis.ipynb
+│ └── topology.ipynb
+```
+No further configuration or reorganization is required.
 
 ## References
 
