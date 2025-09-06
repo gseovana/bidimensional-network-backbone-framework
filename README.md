@@ -3,8 +3,9 @@
 This repository provides the code and data to reproduce the results presented in the paper:
 
 **"A Network-Driven Framework for Bidimensional Analysis of Information Dissemination on Social Media Platforms"**<br>
-Geovana S. Oliveira, João Pedro Lobo, Otávio Venâncio, Vinícius da F. Vieira, Jussara M. Almeida, Ana P. C. Silva, Ronan S. Ferreira and Carlos H. G. Ferreira<br>
-To appear in Journal on Interactive Systems, 2025.
+Geovana S. Oliveira, João Pedro Lobo, Otávio Venâncio, Vinícius da F. Vieira, Jussara M. Almeida, Ana P. C. Silva, Ronan S. Ferreira and Carlos H. G. Ferreira<br> 
+**DOI: 0.5753/jis.2025.5526**<br><br>
+Accepted and published in Journal on Interactive Systems, 2025.
 
 
 ## Description
